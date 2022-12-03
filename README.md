@@ -1,2 +1,2 @@
 # calculator-api
-Calculator API
+Calculator API - Simple Calculator API

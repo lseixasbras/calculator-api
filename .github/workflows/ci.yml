@@ -24,7 +24,7 @@ jobs:
       - name: Run Unit tests
         run: npm test
 
-      - name: Start API and Run Integration tests
+      - name: Start API
         run: |
           npm start &
           sleep 1

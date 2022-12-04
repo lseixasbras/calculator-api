@@ -31,12 +31,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/calculus?query=MiAqICgyMy8oMyozKSktIDIzICogKDIqMyk=",
-					"protocol": "http",
+					"raw": "{{URL}}/calculus?query=MiAqICgyMy8oMyozKSktIDIzICogKDIqMyk=",
 					"host": [
-						"localhost"
+						"{{URL}}"
 					],
-					"port": "3000",
 					"path": [
 						"calculus"
 					],
@@ -75,12 +73,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/calculus?query=MiAqICgyMy8oMyozKSktIDIzICogKIqMyk=",
-					"protocol": "http",
+					"raw": "{{URL}}/calculus?query=MiAqICgyMy8oMyozKSktIDIzICogKIqMyk=",
 					"host": [
-						"localhost"
+						"{{URL}}"
 					],
-					"port": "3000",
 					"path": [
 						"calculus"
 					],
@@ -119,12 +115,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/calculus?query=MiooMjMvKDMqMykpLTIzKigyKjMpKSkp",
-					"protocol": "http",
+					"raw": "{{URL}}/calculus?query=MiooMjMvKDMqMykpLTIzKigyKjMpKSkp",
 					"host": [
-						"localhost"
+						"{{URL}}"
 					],
-					"port": "3000",
 					"path": [
 						"calculus"
 					],
@@ -163,12 +157,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/calculus",
-					"protocol": "http",
+					"raw": "{{URL}}/calculus",
 					"host": [
-						"localhost"
+						"{{URL}}"
 					],
-					"port": "3000",
 					"path": [
 						"calculus"
 					]

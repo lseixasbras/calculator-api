@@ -25,9 +25,10 @@ jobs:
         run: npm test
 
       - name: Start API
-        run: npm start
+        run: |
+          npm start
 
-      - name: Start API
+      - name: Run Integration tests
         uses: matt-ball/newman-action@master
         with:
           collection: ${{ github.workspace }}/postman-colections/Integration_Tests.postman_collection.json

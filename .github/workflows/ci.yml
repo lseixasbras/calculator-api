@@ -24,6 +24,9 @@ jobs:
       - name: Run Unit tests
         run: npm test
 
+      - name: Start application
+        run: npm start
+
       - name: Run Integration tests
         uses: matt-ball/newman-action@master
         with:

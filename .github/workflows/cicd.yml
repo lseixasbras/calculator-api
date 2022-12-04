@@ -2,24 +2,27 @@ name: Node Continuous Integration and Deployment
 
 on:
   pull_request:
-    branches: [ main ]
+    branches: 
+      - main
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 
 jobs:
   test_pull_request:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
 
       - name: Use Node.js
-      - uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
-          node-version: 12
+          node-version: 16.13.x
 
       - name: Install dependencies
-      - run: npm ci
+        run: npm ci
 
       - name: Run Unit tests
-      - run: npm test
+        run: npm test

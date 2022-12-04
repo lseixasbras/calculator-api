@@ -28,8 +28,9 @@ jobs:
         run: |
           npm start &
           sleep 2
-        uses: matt-ball/newman-action@master
+
+      - uses: matt-ball/newman-action@master
         with:
           collection: ${{ github.workspace }}/postman-colections/Integration_Tests.postman_collection.json
           environment: ${{ github.workspace }}/postman-colections/calculator.postman_environment.json
-        run: kill -9 `lsof -i:5000 -t`
+      - run: kill -9 `lsof -i:5000 -t`

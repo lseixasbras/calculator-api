@@ -1,7 +1,7 @@
-name: Node Continuous Integration and Deployment
+name: Node Continuous Integration
 
 on:
-  push:
+  pull_request:
     branches:
       - main
 

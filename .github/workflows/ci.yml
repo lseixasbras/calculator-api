@@ -27,4 +27,5 @@ jobs:
       - name: Run Integration tests
         uses: matt-ball/newman-action@master
         with:
-          collection: ${{ github.workspace}}/postman-colections/Integration_Tests.postman_collection.json
+          collection: ${{ github.workspace }}/postman-colections/Integration_Tests.postman_collection.json
+          environment: ${{ github.workspace }}/postman-colections/calculator.postman_environment.json

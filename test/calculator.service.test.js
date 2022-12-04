@@ -31,4 +31,15 @@ describe("Calculator Tests", () => {
 
         expect(result).toBe(3);
     });
+
+    test("Invalid Operation", () => {
+         expect(() => {
+            calculatorService.calculate("1+1/")
+          }).toThrow();
+    });
+
+    test("Infinite Operation", () => {
+        var result = calculatorService.calculate("10/0")
+        expect(result).toBe(Infinity);
+   });
 })

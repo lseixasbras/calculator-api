@@ -1,13 +1,14 @@
-//const HttpError = require('../DTOS/http-error');
-
 class CalculatorService {
   constructor() {
   }
 
   calculate(operation) {
-
-    const operationResult = eval(operation)
-    return operationResult;
+    try {
+        const operationResult = eval(operation)
+        return operationResult;
+    } catch (error) {
+      throw new Error(error.message);
+    }
   }
 
 }

@@ -37,7 +37,7 @@ class CalculatorController {
     } catch (err) {
       return next(
         new HttpError(
-          `Server error: ${err.name ? err.name : ''} `,
+          `Server error: ${err.message ? err.message : ''} `,
           err.code,
         )
       );

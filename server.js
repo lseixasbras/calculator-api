@@ -1,6 +1,6 @@
 const express = require('express')
 
-const calculatorRoute = require('./routes/calculator');
+const calculatorRoute = require('./src/routes/calculator');
 
 const app = express();
 

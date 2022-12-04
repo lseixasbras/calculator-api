@@ -27,7 +27,8 @@ jobs:
       - name: Start API
         run: |
           npm start
-
+          sleep 3
+          
       - name: Run Integration tests
         uses: matt-ball/newman-action@master
         with:

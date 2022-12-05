@@ -32,6 +32,7 @@ class CalculatorController {
     try {
  
       const result = this.calculatorService.calculate(decodedQueryNoSpaces)
+      //const result = this.calculatorService.calculate2(decodedQueryNoSpaces)
 
       return res.status(200).json({ error: false, result: result });
     } catch (err) {

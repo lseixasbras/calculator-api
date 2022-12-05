@@ -73,7 +73,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{URL}}/calculus?query=MiAqICgyMy8oMyozKSktIDIzICogKIqMyk=",
+					"raw": "{{URL}}/calculus?query=MiAqICgyMy8oMyozKSktIDIzICogKA==",
 					"host": [
 						"{{URL}}"
 					],
@@ -83,7 +83,7 @@
 					"query": [
 						{
 							"key": "query",
-							"value": "MiAqICgyMy8oMyozKSktIDIzICogKIqMyk="
+							"value": "MiAqICgyMy8oMyozKSktIDIzICogKA=="
 						}
 					]
 				}

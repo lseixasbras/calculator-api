@@ -115,7 +115,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{URL}}/calculus?query=MiooMjMvKDMqMykpLTIzKigyKjMpKSkp",
+					"raw": "{{URL}}/calculus?query=MiAqICgyMy8oMyozKSktKiAyMyAqICgyKjMp",
 					"host": [
 						"{{URL}}"
 					],
@@ -125,7 +125,7 @@
 					"query": [
 						{
 							"key": "query",
-							"value": "MiooMjMvKDMqMykpLTIzKigyKjMpKSkp"
+							"value": "MiAqICgyMy8oMyozKSktKiAyMyAqICgyKjMp"
 						}
 					]
 				}

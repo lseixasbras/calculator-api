@@ -71,3 +71,10 @@ The code development followed and layered architecture. The components responsib
 - **Controller**: layer that receives requests from other systems and forward them to the services. It validates the information received and guarantees only the passage of information in a valid state to the remaining components;
 - **DTO** (Data Transfer Objects): An object that stores data transported between processes, reducing the number of method calls required;
 - **Services**: contain the business logic and business flow an.
+- **Utils**: functions that perform other functionality and that are shared by the services (here we have the _lexer_ (responsible for transforming raw text into a stream of tokens. A token is a single element in a programming language.), _parser_ (main function is to build a syntax tree out of a stream of tokens; _Abstract Syntax Tree_ (AST) was used) and _interpreter_ (place where the actual execution is happening. It reads the AST obtained from the parser and converts it into executable code).
+
+### Abstract Syntax Tree developed
+Example for operation _10 + 2 * 3 - 7_
+
+![AST structure](docs/ast.png)
+![AST Tree View](docs/ast_treeView.png)

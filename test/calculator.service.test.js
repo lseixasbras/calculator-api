@@ -8,7 +8,7 @@ describe("Calculator Tests", () => {
 
     test("Addition of 2 numbers", () => {
         // arrange and act
-        var result = calculatorService.calculate("1+1")
+        var result = calculatorService.calculate("1 + 1")
 
         // assert
         expect(result).toBe(2);
@@ -34,7 +34,7 @@ describe("Calculator Tests", () => {
 
     test("Invalid Operation", () => {
          expect(() => {
-            calculatorService.calculate("1+1/")
+            calculatorService.calculate("1+1/()")
           }).toThrow();
     });
 
@@ -42,4 +42,38 @@ describe("Calculator Tests", () => {
         var result = calculatorService.calculate("10/0")
         expect(result).toBe(Infinity);
    });
+
+   test("Addition of 2 numbers v2", () => {
+        var result = calculatorService.calculate2("1 + 1")
+        expect(result).toBe(2);
+    });
+
+    test("Subtraction of 2 numbers v2", () => {
+        var result = calculatorService.calculate2("10-8")
+
+        expect(result).toBe(2);
+    });
+
+    test("Multiplication of 2 numbers v2", () => {
+        var result = calculatorService.calculate2("2*8")
+
+        expect(result).toBe(16);
+    });
+
+    test("Division of 2 numbers v2", () => {
+        var result = calculatorService.calculate2("24/8")
+
+        expect(result).toBe(3);
+    });
+
+    test("Invalid Operation v2", () => {
+        expect(() => {
+            calculatorService.calculate2("1+1/()")
+        }).toThrow();
+    }); 
+
+   test("Infinite Operation v2", () => {
+        var result = calculatorService.calculate2("10/0")
+        expect(result).toBe(Infinity);
+    });
 })
